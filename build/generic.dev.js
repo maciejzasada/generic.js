@@ -2701,7 +2701,7 @@ define("gens/std/plugins/requirejs-text/text", [ "module" ], function(module) {
             }.bind(this);
         }
     }, StdActionsGen = function() {
-        gen.addInitializer(function(callback) {
+        gen.addGlobal(function(callback) {
             var i, item, match, action;
             for (i = 0; i < this.attributes.length; ++i) if (item = this.attributes.item(i), 
             match = item.nodeName.match(/^gen-action-([a-zA-Z0-9_]*)$/)) {
@@ -2731,7 +2731,7 @@ define("gens/std/plugins/requirejs-text/text", [ "module" ], function(module) {
             paths: {
                 txt: "gens/std/plugins/requirejs-text/text"
             }
-        }), gen.addInitializer(function(callback) {
+        }), gen.addGlobal(function(callback) {
             var i, item, match, findDataAttributes = function() {
                 for (this.model = this.model || {}, i = 0; i < this.attributes.length; ++i) item = this.attributes.item(i), 
                 match = item.nodeName.match(/^gen-data-([a-zA-Z0-9_]*)$/), match && (this.model[match[1]] = item.nodeValue);
@@ -2740,13 +2740,13 @@ define("gens/std/plugins/requirejs-text/text", [ "module" ], function(module) {
             this.getAttribute("model") ? require([ this.getAttribute("model") + ".js" ], function(model) {
                 this.model = model, findDataAttributes();
             }.bind(this)) : findDataAttributes();
-        }), gen.addInitializer(function(callback) {
+        }), gen.addGlobal(function(callback) {
             var view = this.getAttribute("gen-view");
             view && require([ "gens/std/plugins/requirejs-text/text!" + view ], function(viewContent) {
                 this.innerHTML = view.indexOf(".hbs") === view.length - ".hbs".length ? window.Handlebars.compile(viewContent)(this.model || {}) : viewContent, 
                 gen.parseDom(this), callback();
             }.bind(this));
-        }), gen.addInitializer(function(callback) {
+        }), gen.addGlobal(function(callback) {
             callback();
         });
     };
@@ -2765,26 +2765,28 @@ define("gens/std/plugins/requirejs-text/text", [ "module" ], function(module) {
         minor: "{{version.minor}}",
         dot: "{{version.dot}}",
         codename: "{{version.codename}}"
-    }, initializers = [], onReadyCallbacks = {}, each = function(arr, f) {
+    }, globalGens = [], onReadyCallbacks = {}, each = function(arr, f) {
         var i;
         for (i = 0; i < arr.length; ++i) f(arr[i], i);
     };
     gen.init = function($gen, callback) {
-        var wait = initializers.length, onReady = function() {
+        var wait = globalGens.length, onReady = function() {
             $gen.$ready = !0, callback(), onReadyCallbacks[$gen] && each(onReadyCallbacks[$gen], function(callback) {
                 callback();
             });
         }, onInit = function() {
             0 === --wait && onReady();
         };
-        each(initializers, function(initializer) {
+        each(globalGens, function(initializer) {
             initializer.call($gen, onInit);
         }), 0 === wait && onReady();
+    }, gen.run = function(f, $gen) {
+        "function" == typeof f ? f.call($gen) : gen.load($gen, f);
     }, gen.onReady = function($gen, callback) {
         $gen.$ready ? callback() : (onReadyCallbacks[$gen] = onReadyCallbacks[$gen] || [], 
         onReadyCallbacks[$gen].push(callback));
-    }, gen.addInitializer = function(f) {
-        -1 === initializers.indexOf(f) && initializers.push(f);
+    }, gen.addGlobal = function(f) {
+        -1 === globalGens.indexOf(f) && globalGens.push(f);
     }, gen.parseDom = function(domElement) {
         each(domElement.getElementsByTagName("*"), function(node) {
             node.getAttribute && node.getAttribute("gen") && each(node.getAttribute("gen").replace(/\s/g, "").split(","), function(name) {
@@ -2798,7 +2800,7 @@ define("gens/std/plugins/requirejs-text/text", [ "module" ], function(module) {
         require([ "gens/" + name ], function(f) {
             gen.init($gen, function() {
                 "function" == typeof f ? f.call($gen) : each(f, function(f) {
-                    f.call($gen);
+                    gen.run(f, $gen);
                 });
             });
         });

@@ -13,7 +13,7 @@ define('gens/std/actions', [], function () {
         },
 
         StdActionsGen = function () {
-            gen.addInitializer(function loadModel(callback) {
+            gen.addGlobal(function initActions(callback) {
                 var i,
                     item,
                     match,

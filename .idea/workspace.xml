@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6d79634-c27b-4b6b-aad7-6dad5311fdb7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gens/std/actions.js" afterPath="$PROJECT_DIR$/gens/std/actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generic-std.js" afterPath="$PROJECT_DIR$/build/generic-std.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generic.dev.js" afterPath="$PROJECT_DIR$/build/generic.dev.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generic.js" afterPath="$PROJECT_DIR$/build/generic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic.js" afterPath="$PROJECT_DIR$/src/generic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gens/std/mvc.js" afterPath="$PROJECT_DIR$/gens/std/mvc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="genericjs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,55 +34,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="30" selection-start="172" selection-end="172" vertical-scroll-proportion="0.08966695" vertical-offset="0" max-vertical-offset="1171">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generic.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/generic.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="39" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1965">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bower.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="std.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gens/std.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="22" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="210">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="107" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mvc.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gens/std/mvc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="45" selection-start="918" selection-end="918" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1005">
+            <state line="5" column="4" selection-start="74" selection-end="118" vertical-scroll-proportion="0.06404782" vertical-offset="0" max-vertical-offset="1171">
               <folding />
             </state>
           </provider>
@@ -82,25 +46,16 @@
       <file leaf-file-name="ball.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/gens/ball.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="27" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="240">
+            <state line="5" column="27" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actions.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gens/std/actions.js">
+      <file leaf-file-name="generic.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/generic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="720">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="html.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gens/std/html.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+            <state line="118" column="39" selection-start="3157" selection-end="3157" vertical-scroll-proportion="0.0" vertical-offset="890" max-vertical-offset="2085">
               <folding />
             </state>
           </provider>
@@ -124,7 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/gens/std/plugins/require-handlebars-plugin/hbs/underscore.js" />
         <option value="$PROJECT_DIR$/gens/std/plugins/require-handlebars-plugin/hbs.js" />
         <option value="$PROJECT_DIR$/gens/std/plugins/require-handlebars-plugin/hbs/i18nprecompile.js" />
         <option value="$PROJECT_DIR$/gens/std/plugins/requirejs-text/text.js" />
@@ -132,14 +86,15 @@
         <option value="$PROJECT_DIR$/demo/gens/ball.js" />
         <option value="$PROJECT_DIR$/gens/std/html.js" />
         <option value="$PROJECT_DIR$/gens/std.js" />
-        <option value="$PROJECT_DIR$/src/generic.js" />
-        <option value="$PROJECT_DIR$/gens/std/mvc.js" />
         <option value="$PROJECT_DIR$/demo/index.html" />
-        <option value="$PROJECT_DIR$/gens/std/actions.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/gens/std/mvc.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/gens/std/actions.js" />
+        <option value="$PROJECT_DIR$/src/generic.js" />
       </list>
     </option>
   </component>
@@ -239,7 +194,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
+              <option name="myItemId" value="gens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="genericjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generic.js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="std" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -358,11 +331,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="60" selection-start="197" selection-end="197" vertical-scroll-proportion="0.06265664" vertical-offset="0" max-vertical-offset="1197" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gens/std/plugins/requirejs-text/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0877193" vertical-offset="0" max-vertical-offset="1197" />
@@ -376,62 +344,6 @@
     <entry file="file://$PROJECT_DIR$/demo/views/ball.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gens/std.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gens/std/html.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1197">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gens/std/mvc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="45" selection-start="918" selection-end="918" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gens/std/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="107" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/gens/ball.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="27" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/generic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="39" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
@@ -450,9 +362,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gens/std/html.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="255" selection-end="255" vertical-scroll-proportion="0.12552302" vertical-offset="0" max-vertical-offset="1195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gens/std/mvc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.12552302" vertical-offset="0" max-vertical-offset="1195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="30" selection-start="172" selection-end="172" vertical-scroll-proportion="0.08966695" vertical-offset="0" max-vertical-offset="1171">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="51" selection-start="188" selection-end="188" vertical-scroll-proportion="0.06276151" vertical-offset="0" max-vertical-offset="1195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="0.30742955" vertical-offset="0" max-vertical-offset="1171">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gens/std.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="22" selection-start="84" selection-end="84" vertical-scroll-proportion="0.037656903" vertical-offset="0" max-vertical-offset="1195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/gens/ball.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="27" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gens/std/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="175" selection-end="175" vertical-scroll-proportion="0.087866105" vertical-offset="0" max-vertical-offset="1195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="39" selection-start="3157" selection-end="3157" vertical-scroll-proportion="0.0" vertical-offset="890" max-vertical-offset="2085">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="74" selection-end="118" vertical-scroll-proportion="0.06404782" vertical-offset="0" max-vertical-offset="1171">
           <folding />
         </state>
       </provider>

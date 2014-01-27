@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 app.configure(function(){
     app.use('/', express.static(__dirname + '/demo'));
-    app.use('/build', express.static(__dirname + '/tmp/build'));
+    app.use('/build', express.static(__dirname + '/build'));
     app.use(express.errorHandler());
 });
 

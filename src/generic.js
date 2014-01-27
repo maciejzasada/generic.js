@@ -8,7 +8,7 @@
             dot: '{{version.dot}}',
             codename: '{{version.codename}}'
         },
-        initializers = [],
+        globalGens = [],
         onReadyCallbacks = {},
         each = function (arr, f) {
             var i;
@@ -22,7 +22,7 @@
      * @param $gen
      */
     gen.init = function ($gen, callback) {
-        var wait = initializers.length,
+        var wait = globalGens.length,
             onReady = function () {
                 $gen.$ready = true;
                 callback();
@@ -39,12 +39,20 @@
                 }
             };
 
-        each(initializers, function (initializer) {
+        each(globalGens, function (initializer) {
             initializer.call($gen, onInit);
         });
 
         if (wait === 0) {
             onReady();
+        }
+    };
+
+    gen.run = function (f, $gen) {
+        if (typeof f === 'function') {
+            f.call($gen);
+        } else {
+            gen.load($gen, f);
         }
     };
 
@@ -58,12 +66,12 @@
     };
 
     /**
-     * Adds new initializer function.
+     * Adds a global gen initializer.
      * @param f
      */
-    gen.addInitializer = function (f) {
-        if (initializers.indexOf(f) === -1) {
-            initializers.push(f);
+    gen.addGlobal = function (f) {
+        if (globalGens.indexOf(f) === -1) {
+            globalGens.push(f);
         }
     };
 
@@ -108,7 +116,7 @@
                     f.call($gen);
                 } else {
                     each(f, function (f) {
-                        f.call($gen);
+                        gen.run(f, $gen);
                     });
                 }
             });

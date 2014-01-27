@@ -9,7 +9,7 @@ define('gens/std/mvc', [], function () {
             }
         });
 
-        gen.addInitializer(function loadModel(callback) {
+        gen.addGlobal(function loadModel(callback) {
             var i,
                 item,
                 match,
@@ -35,7 +35,7 @@ define('gens/std/mvc', [], function () {
             }
         });
 
-        gen.addInitializer(function loadView(callback) {
+        gen.addGlobal(function loadView(callback) {
             var view = this.getAttribute('gen-view');
             if (view) {
                 require(['gens/std/plugins/requirejs-text/text!' + view], function (viewContent) {
@@ -50,7 +50,7 @@ define('gens/std/mvc', [], function () {
             }
         });
 
-        gen.addInitializer(function loadController(callback) {
+        gen.addGlobal(function loadController(callback) {
             callback();
         });
 
