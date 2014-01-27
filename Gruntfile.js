@@ -84,7 +84,7 @@ module.exports = function(grunt) {
             options: {
                 files: ['package.json', 'bower.json'],
                 commit: false,
-                createTag: false,
+                createTag: true,
                 push: false
             }
         }
