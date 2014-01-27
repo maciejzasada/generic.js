@@ -1,0 +1,29 @@
+{
+  "name": "generic.js",
+  "codename": "Alpha",
+  "version": "0.0.1-0",
+  "description": "Generic.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maciejzasada/generic.js.git"
+  },
+  "author": "Maciej Zasada",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "~3.4.8",
+    "matchdep": "~0.3.0",
+    "time-grunt": "~0.2.8",
+    "grunt": "~0.4.2",
+    "grunt-bump": "0.0.13",
+    "shelljs": "~0.2.6",
+    "grunt-jslint": "~1.1.2",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-bower-task": "~0.3.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-replace": "~0.5.1"
+  }
+}

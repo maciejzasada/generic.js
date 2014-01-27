@@ -1,0 +1,24 @@
+{
+  "name": "generic.js",
+  "version": "0.0.1-0",
+  "authors": [
+    "Maciej Zasada <hello@maciejzasada.com>"
+  ],
+  "description": "Generic.js",
+  "main": "build/generic.js",
+  "keywords": [
+    "generic"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.10"
+  }
+}
