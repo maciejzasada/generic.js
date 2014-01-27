@@ -181,6 +181,48 @@ You can also use its gens selectively, e.g.
 <html gen='std/actions, std/mvc'>
 ```
 
+##std/mvc
+The std/mvc *gen* provides simple MVC mechanisms to your application.
+Views support plain HTML as well as Handlebars templates.
+Models are plain *gens* (JavaScript functions).
+
+###views
+
+####views/user.hbs
+```html
+<p>User: {{name}}</p>
+```
+
+####gens/user.js
+An empty *gen*.
+
+####index.html
+```html
+<html gen='std/mvc'>
+  <head>
+    <script src="build/generic.js"></script>
+  </head>
+  <body>
+    <div gen='user' gen-view='views/user.hbs' gen-data-name='John'></div>
+  </body>
+</html>
+```
+
+
+####Render:
+```html
+<html gen='std/mvc'>
+  <head>
+    <script src="build/generic.js"></script>
+  </head>
+  <body>
+    <div gen='user' gen-view='views/user.hbs' gen-data-name='John'>
+      <p>User: John</p>
+    </div>
+  </body>
+</html>
+```
+
 
 Building GenericJS
 ---------
